@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Tristan Gavin</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <h1 id="name" class="center">
+                Tristan Gavin
+            </h1>
+            <div class="center inline">
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="projects" class="projects">
+            <h1 class="center"><a href="https://github.com/TristanGavin">Projects <i class="fa fa-github"
+                        aria-hidden="true"></i></a>
+            </h1>
+            <div class="pcwrapper">
+                <div class="photocard">
+                    <h2 class="proj-title"><a href="https://github.com/TristanGavin/Smallsh">Small Shell</a></h2>
+                    <div class="img-containter">
+                        <img src="smallsh.PNG" alt="smallshell project">
+                    </div>
+                    <p>A basic shell written in C. Supports I/O redirection, foreground and
+                        background proccesses and implements built in commands.</p>
+                </div>
+                <div class="photocard">
+                    <h2 class="proj-title"><a href="https://github.com/TristanGavin/JSFoodGenerator">Recipe
+                            Generator</a></h2>
+                    <div class="img-containter">
+                        <img src="food.png" alt="food generator project">
+                    </div>
+                    <p>Used NodeJS and Handlebars to create a dynamic website that
+                        gives the user meal recipes based on inputed ingredients.</p>
+                </div>
+                <div class="photocard">
+                    <h2 class="proj-title"><a href="https://github.com/TristanGavin/FCKT">FCKT Programmin Language</a>
+                    </h2>
+                    <div class="img-containter">
+                        <img src="haskell.png" alt="imperitive programming language">
+                    </div>
+                    <p>An imperitive programming language implemented through haskell.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="resume">
+
+        </div>
+    </main>
+</body>
+
+</html>
