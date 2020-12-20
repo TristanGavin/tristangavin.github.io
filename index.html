@@ -1,91 +1,51 @@
-<!doctype html>
-
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 
-    <title>Tristan Gavin</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
-
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("a").on('click', function (event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
-                        window.location.hash = hash;
-                    });
-                }
-            });
-        });
-    </script>
+  <title>Tristan Gavin</title>
+  <link rel="stylesheet" href="styles.css">
 
 </head>
 
+<header>
+    <a href="resume.html">Resume</a>
+    <a href="projects.html">Coding Projects</a>
+    <a href="rowing.html">Rowing</a>
+</header>
+
 <body>
-    <header>
-        <div class="wrapper">
-            <h1 id="name" class="center">
-                Tristan Gavin
-            </h1>
-            <div class="center inline">
-                <ul>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+    <div class="main">
+        <div class="inside-main">
+            <img id="profile" src="image/profile.jpg" alt="picture of me">
+            <h1>Tristan Gavin's Webpage</h1>
+    
+    
+            <h2>About Me</h2>
+            <p>
+                "If you're getting rad and there's no one there to see it are you really getting rad at all?"
+    
+                Welcome to my website! I am a rower and computer science major / math minor at Oregon State University. I like to spend my time sitting on a rowing machine going back in forth until I am really sweaty and in a lot of pain. I also enjoy skiing, rock-climbing, rafting backpacking, and getting rad in the outdoors with my freinds.
+            </p>
+            <!-- <img id="climbing" src="climbing.jpg" alt="climbing with my buds"> -->
+            <img id="skiing" src="image/skiing.jpg" alt="skiing with my buds">
+            <h3>Ski Bummin' in Tahoe</h3>
+            <p>
+                I didn't know what I wanted to do after high school and ended up being a ski bum in tahoe for a year and learned some really important life skills. I didn't own a car so I hitchhiked to my job as a janitor at the Alpine Meadows ski resort but my shifts usually didn't end until close to midnight so trying to a ride 20 miles back home in the middle of the night wasn't working out too great. I ended up buying a Ford Exploder for $500 dollars that the transmission was broken on so it couln't go in reverse. This caused for some precarious situations to say the least.
+            </p>
+            <p>
+                My roomate Leslie taught me how to enjoy and appreciate the absolute beauty and joy that the outdoors provides. She took me on wild adventures and introduced me to all her freinds which I had none of at the time. I can not be more greatful for my experience living there and for the people I became close to.
+            </p>
+    
+            <h3>What Now?</h3>
+            <p>
+                I have temporarily set aside my passion for getting rad to focus on my personal development. I am currently pursuing a degree in computer science with a focus in artifial intelligence. I am specifically interested in machine learning and the linear algebra and statistics behind it. Machine learning is an extremely powerful tool being used to solve complex and deep <a href="https://deepmind.com/blog/article/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology">problems</a> that were previously unaproachable.
+            </p>
+    
         </div>
-    </header>
-
-    <main>
-        <div id="projects" class="projects">
-            <h1 class="center"><a href="https://github.com/TristanGavin">Projects <i class="fa fa-github"
-                        aria-hidden="true"></i></a>
-            </h1>
-            <div class="pcwrapper">
-                <div class="photocard">
-                    <h2 class="proj-title"><a href="https://github.com/TristanGavin/Smallsh">Small Shell</a></h2>
-                    <div class="img-containter">
-                        <img src="smallsh.PNG" alt="smallshell project">
-                    </div>
-                    <p>A basic shell written in C. Supports I/O redirection, foreground and
-                        background proccesses and implements built in commands.</p>
-                </div>
-                <div class="photocard">
-                    <h2 class="proj-title"><a href="https://github.com/TristanGavin/JSFoodGenerator">Recipe
-                            Generator</a></h2>
-                    <div class="img-containter">
-                        <img src="food.png" alt="food generator project">
-                    </div>
-                    <p>Used NodeJS and Handlebars to create a dynamic website that
-                        gives the user meal recipes based on inputed ingredients.</p>
-                </div>
-                <div class="photocard">
-                    <h2 class="proj-title"><a href="https://github.com/TristanGavin/FCKT">FCKT Programmin Language</a>
-                    </h2>
-                    <div class="img-containter">
-                        <img src="haskell.png" alt="imperitive programming language">
-                    </div>
-                    <p>An imperitive programming language implemented through haskell.</p>
-                </div>
-            </div>
-        </div>
-
-        <div id="resume">
-
-        </div>
-    </main>
+    
+    </div>
 </body>
+
+
 
 </html>
