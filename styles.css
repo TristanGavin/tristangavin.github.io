@@ -43,6 +43,10 @@ body {
     margin: 12px;
 }
 
+#padtop {
+    padding-top: 10px;
+}
+
 /* pictures */
 #climbing{
     float: left;
