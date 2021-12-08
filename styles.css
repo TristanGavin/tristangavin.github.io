@@ -59,11 +59,31 @@ body {
     float: left;
     margin-right: 12px;
 }
+#osu{
+    width: 200px;
+    height: auto;
+    float: center;
+    margin-right: 12px;
+}
 #profile{
     float: right;
     width: 300px;
     height: auto;
     margin-left: 20px;
+}
+#cof{
+    display: block;
+    width: 300px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+#adsorption{
+    display: block;
+    width: 300px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 #resume{
     display: block;
